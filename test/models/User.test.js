@@ -1,6 +1,6 @@
 const User = require('./../../app/models/User')
 
-describe("Unit Tests for Users class",() =>{
+describe("Unit Tests for Users class",() => {
     test('Create an User object ', () => {
       //Aqui invocas el codigo que va usar en tu app
       const user = new User(1, "carlogilmar", "Carlo", "Bio", "dateCreated", "lastUpdated")
@@ -13,6 +13,6 @@ describe("Unit Tests for Users class",() =>{
       expect(user.bio).toBe("Bio")
       expect(user.dateCreated).toBe("dateCreated")
       expect(user.lastUpdated).toBe("lastUpdated")
-    })
+    });
     
 })
